@@ -10,12 +10,12 @@ function generate(nounPlural, verb) {
   nounPlural = nounPlural || nouns.pick().pluralize();
   verb = verb || nouns.pick().pluralize();
   var generatedText = '<span class="word">&nbsp;' + verb + '&nbsp;</span> are the jQuery of <span class="word">&nbsp;' + nounPlural + '&nbsp;</span>';
-  var shareText = verb + ' are the jQuery of ' + nounPlural + ' #jqProclamations';
+  var shareText = verb + ' are the jQuery of ' + nounPlural;
   $('#content').html(generatedText);
   var shareUrl = window.location.href.split('?')[0]+'?word='+sharing.encodeStr(verb)+'$'+sharing.encodeStr(nounPlural);
   $('#share').attr('href', shareUrl);
   $('.twitter-share-button').remove();
-  $('#twitterShare').html('<a href="https://twitter.com/share" class="twitter-share-button" data-url="' + shareUrl + '" data-text="' + shareText + '" data-lang="en">Tweet</a>');
+  $('#twitterShare').html('<a href="https://twitter.com/share" class="twitter-share-button" data-url="' + shareUrl + '" data-text="' + shareText + ' #jqProclamations" data-lang="en">Tweet</a>');
   if (twttr.widgets) {
     twttr.widgets.load();
   }
