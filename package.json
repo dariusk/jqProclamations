@@ -1,0 +1,32 @@
+{
+  "name": "jqProclamations",
+  "description": "blank is the jquery of blank",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dariusk/jqProclamations",
+  "author": {
+    "name": "Darius Kazemi",
+    "email": "darius.kazemi@gmail.com",
+    "url": "http://tinysubversions.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dariusk/jqProclamations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dariusk/jqProclamations/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dariusk/jqProclamations/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.0"
+  },
+  "keywords": []
+}
